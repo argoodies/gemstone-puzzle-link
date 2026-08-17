@@ -1,0 +1,16 @@
+# Fly.io 静态托管 擦宝石 营销/隐私/支持主页。
+app = "gemstone-puzzle-link"
+primary_region = "lax"
+
+[build]
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

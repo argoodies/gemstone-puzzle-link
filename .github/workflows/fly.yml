@@ -1,0 +1,25 @@
+name: Deploy to Fly
+# 静态主页（营销/隐私/支持，中英日）→ nginx 镜像 → Fly。需仓库 Secret: FLY_API_TOKEN。
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "public/**"
+      - "Dockerfile"
+      - "fly.toml"
+      - ".github/workflows/fly.yml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - name: Deploy
+        if: ${{ env.FLY_API_TOKEN != '' }}
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+        run: |
+          flyctl apps create gemstone-puzzle-link --org personal 2>/dev/null || true
+          flyctl deploy --remote-only
