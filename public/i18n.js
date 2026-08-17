@@ -75,10 +75,7 @@ function initLang(){
   document.querySelectorAll("[data-email]").forEach(a=>{ a.textContent=EMAIL; a.href="mailto:"+EMAIL; });
   let l = null;
   try{ l = localStorage.getItem("gp_lang"); }catch(e){}
-  if(!l){
-    const n = (navigator.language||"en").toLowerCase();
-    l = n.startsWith("zh") ? "zh" : n.startsWith("ja") ? "ja" : "en";
-  }
+  if(!l) l = "en";   // 默认英语（其次中/日，由用户切换）
   applyLang(l);
   const box = document.querySelector(".lang");
   const btn = document.getElementById("langBtn");
