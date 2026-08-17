@@ -13,9 +13,10 @@ const I18N = {
     f4_t: "轻松无压力", f4_d: "无账号、无广告、无计时，随时放松。",
     priv_t: "隐私政策",
     priv_updated: "更新于 2026-08-17",
-    priv_p: "《擦宝石》不收集、不存储、不分享任何个人数据：无账号、无数据分析、无广告、无第三方追踪。游戏进度仅保存在你的设备本地，我们无法访问；本应用也不需要任何特殊权限。",
+    priv_p: "《擦宝石》不收集、不存储、不分享任何个人数据：无账号、无数据分析、无广告、无第三方追踪。游戏进度仅保存在你的设备本地，我们无法访问（它可能包含在设备的标准 iCloud 备份中，由 Apple 管理，与我们无关）；本应用也不需要任何特殊权限。",
     sup_t: "支持",
     sup_p: "需要帮助或想反馈？欢迎邮件联系,我们会尽快回复。",
+    sup_backup: "进度会随设备的 iCloud 备份一起保存——换新机从备份恢复即可找回,无需登录。",
     contact: "联系邮箱",
     foot_rights: "保留所有权利。"
   },
@@ -31,9 +32,10 @@ const I18N = {
     f4_t: "Relaxing, No Pressure", f4_d: "No account, no ads, no timers — unwind any time.",
     priv_t: "Privacy Policy",
     priv_updated: "Updated 2026-08-17",
-    priv_p: "Gemstone Puzzle does not collect, store, or share any personal data: no accounts, no analytics, no ads, no third-party tracking. Your progress is stored only locally on your device and we cannot access it. The app requires no special permissions.",
+    priv_p: "Gemstone Puzzle does not collect, store, or share any personal data: no accounts, no analytics, no ads, no third-party tracking. Your progress is stored only locally on your device and we cannot access it (it may be part of your device’s standard iCloud backup, which is managed by Apple, not us). The app requires no special permissions.",
     sup_t: "Support",
     sup_p: "Need help or want to share feedback? Email us and we’ll get back to you.",
+    sup_backup: "Your progress is included in your device’s iCloud backup — restore it on a new device and your progress comes back, no login needed.",
     contact: "Contact",
     foot_rights: "All rights reserved."
   },
@@ -49,9 +51,10 @@ const I18N = {
     f4_t: "気楽にのんびり", f4_d: "アカウント・広告・タイマーなし。いつでもリラックス。",
     priv_t: "プライバシーポリシー",
     priv_updated: "更新日 2026-08-17",
-    priv_p: "「宝石磨き」は個人データを一切収集・保存・共有しません。アカウント・分析・広告・第三者トラッキングはありません。進行状況は端末内にのみ保存され、私たちはアクセスできません。特別な権限も必要としません。",
+    priv_p: "「宝石磨き」は個人データを一切収集・保存・共有しません。アカウント・分析・広告・第三者トラッキングはありません。進行状況は端末内にのみ保存され、私たちはアクセスできません（端末の標準的な iCloud バックアップに含まれる場合がありますが、それは Apple が管理し、私たちは関与しません）。特別な権限も必要としません。",
     sup_t: "サポート",
     sup_p: "お困りの点やご意見はメールでお気軽にどうぞ。できるだけ早く返信します。",
+    sup_backup: "進行状況は端末の iCloud バックアップに含まれます。新しい端末で復元すれば進行状況も戻り、ログインは不要です。",
     contact: "連絡先",
     foot_rights: "All rights reserved."
   }
