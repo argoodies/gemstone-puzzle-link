@@ -21,7 +21,7 @@ const I18N = {
   },
   en: {
     _name: "English",
-    brand: "Wipe Gemstone",
+    brand: "Gemstone Puzzle",
     nav_about: "About", nav_privacy: "Privacy", nav_support: "Support",
     tagline: "A cozy wipe-to-reveal game — dust off the stones and let the gems shine in the flask.",
     cta_tf: "TestFlight Beta",
@@ -31,7 +31,7 @@ const I18N = {
     f4_t: "Relaxing, No Pressure", f4_d: "No account, no ads, no timers — unwind any time.",
     priv_t: "Privacy Policy",
     priv_updated: "Updated 2026-08-17",
-    priv_p: "Wipe Gemstone does not collect, store, or share any personal data: no accounts, no analytics, no ads, no third-party tracking. Your progress is stored only locally on your device and we cannot access it. The app requires no special permissions.",
+    priv_p: "Gemstone Puzzle does not collect, store, or share any personal data: no accounts, no analytics, no ads, no third-party tracking. Your progress is stored only locally on your device and we cannot access it. The app requires no special permissions.",
     sup_t: "Support",
     sup_p: "Need help or want to share feedback? Email us and we’ll get back to you.",
     contact: "Contact",
