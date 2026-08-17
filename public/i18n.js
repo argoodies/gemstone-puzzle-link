@@ -63,7 +63,9 @@ function applyLang(l){
     const k = el.getAttribute("data-i18n");
     if(d[k]!==undefined) el.textContent = d[k];
   });
-  document.querySelectorAll(".langs button").forEach(b=>b.classList.toggle("on", b.dataset.l===l));
+  const cur = document.getElementById("langCur");
+  if(cur) cur.textContent = d._name;
+  document.querySelectorAll(".lang-menu button").forEach(b=>b.classList.toggle("on", b.dataset.l===l));
   try{ localStorage.setItem("gp_lang", l); }catch(e){}
 }
 function initLang(){
@@ -75,8 +77,14 @@ function initLang(){
     l = n.startsWith("zh") ? "zh" : n.startsWith("ja") ? "ja" : "en";
   }
   applyLang(l);
-  document.querySelectorAll(".langs button").forEach(b=>{
-    b.addEventListener("click", ()=>applyLang(b.dataset.l));
+  const box = document.querySelector(".lang");
+  const btn = document.getElementById("langBtn");
+  if(btn && box){
+    btn.addEventListener("click", e=>{ e.stopPropagation(); box.classList.toggle("open"); });
+    document.addEventListener("click", ()=>box.classList.remove("open"));
+  }
+  document.querySelectorAll(".lang-menu button").forEach(b=>{
+    b.addEventListener("click", ()=>{ applyLang(b.dataset.l); if(box) box.classList.remove("open"); });
   });
 }
 document.addEventListener("DOMContentLoaded", initLang);

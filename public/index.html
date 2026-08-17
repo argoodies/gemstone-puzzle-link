@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wipe Gemstone · 擦宝石 · 宝石磨き</title>
-<meta name="description" content="A cozy wipe-to-reveal gemstone game.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,27 +11,22 @@
 <div class="wrap">
   <div class="nav">
     <div class="brand"><img src="icon.png" alt="icon"><span data-i18n="brand">Wipe Gemstone</span></div>
-    <div class="langs">
-      <button data-l="zh">中文</button>
-      <button data-l="en">EN</button>
-      <button data-l="ja">日本語</button>
+    <div class="lang">
+      <button class="lang-btn" id="langBtn"><span id="langCur">中文</span><span class="arrow">▾</span></button>
+      <div class="lang-menu" id="langMenu">
+        <button data-l="zh">中文</button>
+        <button data-l="en">English</button>
+        <button data-l="ja">日本語</button>
+      </div>
     </div>
   </div>
 
   <div class="hero">
     <img class="gem" src="icon.png" alt="Wipe Gemstone">
     <h1 data-i18n="brand">Wipe Gemstone</h1>
-    <p class="sub" data-i18n="tagline">A cozy wipe-to-reveal game.</p>
     <div class="cta">
       <a class="btn" href="https://testflight.apple.com/join/jGfzz1UR" data-i18n="cta_tf">TestFlight Beta</a>
     </div>
-  </div>
-
-  <div class="grid">
-    <div class="card"><h3 data-i18n="f1_t">Wipe to Reveal</h3><p data-i18n="f1_d"></p></div>
-    <div class="card"><h3 data-i18n="f2_t">Collect in the Flask</h3><p data-i18n="f2_d"></p></div>
-    <div class="card"><h3 data-i18n="f3_t">Procedural Gems</h3><p data-i18n="f3_d"></p></div>
-    <div class="card"><h3 data-i18n="f4_t">Relaxing</h3><p data-i18n="f4_d"></p></div>
   </div>
 
   <div class="foot">
