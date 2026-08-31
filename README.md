@@ -1,6 +1,6 @@
 # gemstone-puzzle-link
 
-擦宝石 · 宝石磨き · **Gemstone Puzzle** 的营销 / 隐私 / 支持主页（中英日切换）。
+擦宝石模拟器 · 宝石磨き · **Gemstone Puzzle** 的营销 / 隐私 / 支持主页（中英日切换）。
 
 - 线上：**https://gemstone-puzzle-link.fly.dev**
 - 页面：`index`（简介）· `privacy`（隐私政策，数据不收集）· `support`（联系 / FAQ）
