@@ -2,7 +2,7 @@
 const EMAIL = "argoodies@googlegroups.com";
 const I18N = {
   zh: {
-    _name: "中文",
+    _name: "简体中文",
     brand: "擦宝石模拟器",
     nav_about: "简介", nav_privacy: "隐私", nav_support: "支持",
     tagline: "一款治愈系的擦拭寻宝小工具——擦去灰尘，让宝石在瓶中闪耀。",
@@ -19,6 +19,25 @@ const I18N = {
     sup_backup: "进度会随设备的 iCloud 备份一起保存——换新机从备份恢复即可找回,无需登录。",
     contact: "联系邮箱",
     foot_rights: "保留所有权利。"
+  },
+  "zh-Hant": {
+    _name: "繁體中文",
+    brand: "擦寶石模擬器",
+    nav_about: "簡介", nav_privacy: "隱私", nav_support: "支援",
+    tagline: "一款治癒系的擦拭尋寶小工具——擦去灰塵，讓寶石在瓶中閃耀。",
+    cta_tf: "TestFlight 測試",
+    f1_t: "擦拭揭示", f1_d: "擦去覆蓋寶石的灰塵，露出通透晶體。",
+    f2_t: "收進水瓶", f2_d: "擦淨的寶石落進玻璃瓶，越攢越多。",
+    f3_t: "程式化寶石", f3_d: "每顆隨機生成的稜角原石，四色可尋。",
+    f4_t: "輕鬆無壓力", f4_d: "無賬號、無廣告、無計時，隨時放鬆。",
+    priv_t: "隱私政策",
+    priv_updated: "更新於 2026-08-17",
+    priv_p: "《擦寶石模擬器》不收集、不儲存、不分享任何個人資料：無賬號、無資料分析、無廣告、無第三方追蹤。應用進度僅儲存在你的裝置本地，我們無法訪問（它可能包含在裝置的標準 iCloud 備份中，由 Apple 管理，與我們無關）；本應用也不需要任何特殊許可權。",
+    sup_t: "支援",
+    sup_p: "需要幫助或想反饋？歡迎郵件聯絡,我們會盡快回復。",
+    sup_backup: "進度會隨裝置的 iCloud 備份一起儲存——換新機從備份恢復即可找回,無需登入。",
+    contact: "聯絡郵箱",
+    foot_rights: "保留所有權利。"
   },
   en: {
     _name: "English",
