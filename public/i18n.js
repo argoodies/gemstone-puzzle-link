@@ -94,7 +94,7 @@ function initLang(){
   document.querySelectorAll("[data-email]").forEach(a=>{ a.textContent=EMAIL; a.href="mailto:"+EMAIL; });
   let l = null;
   try{ l = localStorage.getItem("gp_lang"); }catch(e){}
-  if(!l) l = "en";   // 默认英语（其次中/日，由用户切换）
+  if(!l) l = "zh-Hant";   // 默认繁体中文（繁体优先，其次简/英/日）
   applyLang(l);
   const box = document.querySelector(".lang");
   const btn = document.getElementById("langBtn");
